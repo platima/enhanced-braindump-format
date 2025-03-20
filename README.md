@@ -234,7 +234,7 @@ Copy the entire EBF output and paste it into a new conversation with the appropr
 When pasting into a new conversation, preface it with:
 
 ```
-I'm providing data from a previous conversation in a special format called Enhanced Braindump Format (EBF). EBF is a format that I create in a previous Claude chat explicitly for the purpose of sharing context between conversations whilst retaining maximum information with minimal context consumption.
+I'm providing data from a previous conversation in a new format called Enhanced Braindump Format (EBF). This is a format that I created with you in a previous chat, specifically for the purpose of sharing context between our chats.
 
 Parse this structured data using the below specification:
 - Format begins with: #EBF|v1.1|{timestamp}|{checksum}
@@ -248,7 +248,7 @@ Parse this structured data using the below specification:
 - Temporal indicators with #valid_until for expiration dates
 - Section checksums in format [~SECTION:checksum]
 
-After parsing this data using that specification, please confirm you understand the context, and we can continue our discussion from where we left off.
+After parsing the data using that specification, please confirm you understand the context, so that then we can continue our discussions.
 
 Data:
 ​```
