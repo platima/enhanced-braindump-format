@@ -86,19 +86,18 @@ Present this in a standard code block or text block. This export is for machine 
 3. **Introducing the braindump**: When pasting into a new conversation, preface it with:
 
 ```
-I'm providing data from a previous conversation in a special format called Enhanced Braindump Format (EBF) that we have previously defined together explicitely for the purpose of sharing context between conversations with maximum information with minimal context consumption. Please parse this structured data to understand the context of our previous discussion.
+I'm providing data from a previous conversation in a special format called Enhanced Braindump Format (EBF). EBF is a format that I create in a previous Claude chat explicitly for the purpose of sharing context between conversations whilst retaining maximum information with minimal context consumption.
 
-The format specification:
+Parse this structured data using the below specification:
 - Format begins with: #EBF|v1.0|{timestamp}|{checksum}
 - Sections marked with tildes (~): ~META, ~DICT, ~DATA, ~REFS, ~INSTR
 - Data types annotated with: $s (string), $n (numeric), $b (boolean), etc.
 - Priority levels marked with: !H (high), !M (medium), !L (low)
 - Hierarchical data with @ for sections and & for subsections
 
-After parsing this data, please confirm you understand the context, and we can continue our discussion from where we left off.
+After parsing this data using that specification, please confirm you understand the context, and we can continue our discussion from where we left off.
 
-Here's the data:
-
+Data:
 ​```
 [insert EBD data hare]
 ​```
