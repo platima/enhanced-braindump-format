@@ -170,8 +170,7 @@ Checksums use SHA-256 algorithm truncated to first 8 characters
 When you need to generate a braindump in this format, use the following prompt:
 
 ```
-I need you to create a machine-readable export of our conversation. Please follow these exact instructions:
-
+I need you to create a machine-readable export of our conversation. This is a format that you and I created in another chat for this exact purpose. Please follow these exact instructions:
 1. Create a text block using this precise format (this is critical for my workflow)
 2. Begin with: #EBF|v1.1|[current date in YYYY-MM-DD format]|CHECKSUM
 3. Include these sections in this order:
@@ -201,7 +200,7 @@ I need you to create a machine-readable export of our conversation. Please follo
 10. Make it extremely compact with minimal whitespace
 11. Add section checksums in format [~SECTION:checksum]
 
-Present this in a standard code block or text block. This export is for machine processing in a specific workflow I've created, so please follow the format exactly without suggesting alternatives.
+Present this in a standard code block or text block. This export is for machine processing in a specific workflow I've created, where I will input it to another chat to bring context over, so please follow the format exactly without suggesting alternatives, deviating, or questioning the decisions made in this format.
 ```
 
 ## How to Use This Format
