@@ -1,4 +1,42 @@
-# Enhanced Braindump Format
+# Enhanced Braindump Format (EBF)
+
+## Table of Contents
+
+1. [Format Specification (v1.1)](#format-specification-v11)
+   - [Purpose](#purpose)
+   - [Header Structure](#header-structure)
+   - [Section Types](#section-types)
+   - [Type Annotations](#type-annotations)
+   - [Priority Markers](#priority-markers)
+   - [Confidence Levels](#confidence-levels)
+   - [Relationship Indicators](#relationship-indicators)
+   - [Temporal Indicators](#temporal-indicators)
+   - [Tagging System](#tagging-system)
+   - [Section Checksums](#section-checksums)
+   - [Quickstart Template](#quickstart-template)
+   - [Example Structure](#example-structure)
+   - [Compression Techniques](#compression-techniques)
+   - [Validation](#validation)
+
+2. [Prompt for Generating Braindump Format](#prompt-for-generating-braindump-format)
+
+3. [How to Use This Format](#how-to-use-this-format)
+   - [Creating a New Braindump](#1-creating-a-new-braindump)
+   - [Transferring Context](#2-transferring-context)
+   - [Introducing the Braindump](#3-introducing-the-braindump)
+   - [Extending Existing Braindump](#4-extending-existing-braindump)
+   - [Format Validation](#5-format-validation)
+
+4. [Format Advantages](#format-advantages)
+
+5. [Notes](#notes)
+
+6. [Tested Working](#tested-working)
+   - [Both generating and interpreting](#both-generating-and-interpreting)
+   - [Interpreting only](#interpreting-only)
+   - [Interpreting raw EBF with no header](#interpreting-raw-ebf-with-no-header)
+
+7. [Changelog](#changelog)
 
 ## Format Specification (v1.1)
 
@@ -311,22 +349,23 @@ Please validate the checksums in this EBF document to ensure it hasn't been corr
 ### Interpreting only:
 - Claude 3.5 Haiku (2025-03-26)
 - Claude 3.5 Sonnet (2025-03-26)
-- Claude 3 Optus (2025-03-26)
+- Claude 3 Opus (2025-03-26)
 
-### Interpreting raw EBF with no prefixure / header:
+### Interpreting raw EBF with no header:
 - ChatGPT 4o (Free, 2025-03-20)
 - ChatGPT 4o Reasoning (Free, 2025-03-26)
 - Claude 3.7 Sonnet (Paid, 2025-03-20)
 - Claude 3.7 Sonnet Extended Thinking (Paid, 2025-03-26)
 - Claude 3.5 Haiku (2025-03-26)
 - Claude 3.5 Sonnet (2025-03-26)
-- Claude 3 Optus (2025-03-26)
+- Claude 3 Opus (2025-03-26)
 - DeepSeek V3 (Free, 2025-03-26)
 - DeepSeek V3 R1 (Free, 2025-03-26)
 - Grok 3 Beta (Paid, 2025-03-26)
    
 ## Changelog
-- 2025-03-26: Added some issues
+- 2025-03-26: Moved changelog into README
+- 2025-03-26: Opened a pile of Issues for the sake of improvement
 - 2025-03-26: Added notes section regarding unexpected results
 - 2025-03-26: Added additional testing data
 - 2025-03-26: Added changelog and testing data
