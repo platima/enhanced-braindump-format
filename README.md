@@ -126,5 +126,5 @@ Please update the existing EBF data with our latest discussion points and genera
    
 ## Changelog
 - 2025-03-26: Added changelog and testing data
-- 2025-03-20: Initial creation of v1.0
 - 2025-03-20: Added README and license
+- 2025-03-20: Initial creation of v1.0
