@@ -276,7 +276,6 @@ Please validate the checksums in this EBF document to ensure it hasn't been corr
 ```
 
 ## Format Advantages
-
 1. **Versioning**: Track format evolution across different conversations
 2. **Validation**: Detect corruption or modification through main and section-specific checksums
 3. **Prioritization**: Focus on the most important information first
@@ -292,3 +291,45 @@ Please validate the checksums in this EBF document to ensure it hasn't been corr
 13. **Multi-format Support**: Specialized handling for complex data like code blocks
 14. **Relationship Mapping**: Explicit indicators for dependencies and connections between data points
 15. **Cross-sectional Tagging**: Identify related concepts across different sections
+
+## Notes
+- All tested models appear able to interpret EBF data with no explanation, but this has not been tested thoroughly (generating fresh EBF after exceeding context window could be good here)
+- There is no benchmark yet.
+- This format has been found portable between different LLMs with minimal to no loss in fidelity.
+- The format has been confirmed appears working when using EBC with programming data included.
+- Partially relies on the LLM having an understanding of the current date, which is historically not always the case.
+
+## Tested Working
+### Both generating and interpreting:
+- ChatGPT 4o (Free, 2025-03-20)
+- ChatGPT 4o Reasoning (Free, 2025-03-26)
+- Claude 3.7 Sonnet (Paid, 2025-03-20)
+- Claude 3.7 Sonnet Extended Thinking (Paid, 2025-03-26)
+- DeepSeek V3 (Free, 2025-03-26)
+- DeepSeek V3 R1 (Free, 2025-03-26)
+- Grok 3 Beta (Paid, 2025-03-26)
+### Interpreting only:
+- Claude 3.5 Haiku (2025-03-26)
+- Claude 3.5 Sonnet (2025-03-26)
+- Claude 3 Optus (2025-03-26)
+
+### Interpreting raw EBF with no prefixure / header:
+- ChatGPT 4o (Free, 2025-03-20)
+- ChatGPT 4o Reasoning (Free, 2025-03-26)
+- Claude 3.7 Sonnet (Paid, 2025-03-20)
+- Claude 3.7 Sonnet Extended Thinking (Paid, 2025-03-26)
+- Claude 3.5 Haiku (2025-03-26)
+- Claude 3.5 Sonnet (2025-03-26)
+- Claude 3 Optus (2025-03-26)
+- DeepSeek V3 (Free, 2025-03-26)
+- DeepSeek V3 R1 (Free, 2025-03-26)
+- Grok 3 Beta (Paid, 2025-03-26)
+   
+## Changelog
+- 2025-03-26: Added some issues
+- 2025-03-26: Added notes section regarding unexpected results
+- 2025-03-26: Added additional testing data
+- 2025-03-26: Added changelog and testing data
+- 2025-03-20: Added README and license
+- 2025-03-20: Added more complexity and refined prompts
+- 2025-03-20: Forked from 'main' to create v1.1
