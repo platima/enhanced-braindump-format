@@ -119,3 +119,10 @@ Please update the existing EBF data with our latest discussion points and genera
 6. **Compression**: Maximum information density for context window efficiency
 7. **References**: Avoid duplication through internal cross-references
 8. **Instructions**: Guide the assistant on how to parse and prioritize information
+
+## Tested Working
+- ChatGPT 4o (Free, 2025-03-20)
+- Claude 3.7 Sonnet (Paid, 2025-03-20)
+   
+## Changelog
+- 2025-03-20: Initial creation of v1.0
