@@ -346,6 +346,7 @@ Please validate the checksums in this EBF document to ensure it hasn't been corr
 - DeepSeek V3 (Free, 2025-03-26)
 - DeepSeek V3 R1 (Free, 2025-03-26)
 - Grok 3 Beta (Paid, 2025-03-26)
+- Gemini 2.0 Flash (Free, 2025-04-01)
 ### Interpreting only:
 - Claude 3.5 Haiku (2025-03-26)
 - Claude 3.5 Sonnet (2025-03-26)
@@ -362,8 +363,11 @@ Please validate the checksums in this EBF document to ensure it hasn't been corr
 - DeepSeek V3 (Free, 2025-03-26)
 - DeepSeek V3 R1 (Free, 2025-03-26)
 - Grok 3 Beta (Paid, 2025-03-26)
+- Copilot Work (Free, 2025-04-01)
+- Gemini 2.0 Flash (2025-04-01) **_NOTE:_** _Slight artifacts in continued conversation, such as referring to `~ACTIONS`_
    
 ## Changelog
+- 2025-04-01: Added Copilot & Gemini testing
 - 2025-03-26: Moved changelog into README
 - 2025-03-26: Opened a pile of Issues for the sake of improvement
 - 2025-03-26: Added notes section regarding unexpected results
