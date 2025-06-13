@@ -1,3 +1,5 @@
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=platima.ebf" height="20" />
+
 # Enhanced Braindump Format (EBF)
 
 ## Table of Contents
